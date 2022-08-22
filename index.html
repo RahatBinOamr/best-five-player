@@ -13,12 +13,10 @@
         <h1 class="text-5xl text-center font-bold text-yellow-600  italic ">
             Select My Best Five Player
         </h1>
-        <div class="flex gap-x-4 pt-10 ">
+        <div class=" pt-10 ">
+            
             <div>
-                <img class="w-4/4 " src="img/mashrafe-mortaza.jpg" alt="">
-            </div>
-            <div>
-                <p class="text-white py-7">
+                <p class="text-white text-align-center text-center px-10 py-7">
                     Bangladesh's major achievements include reaching the quarter-finals in 2015 ICC Cricket World Cup, being runners up in three Asia Cup (in 2012, 2016 and 2018) and in 2018 Nidahas Trophy and winning 2019 Ireland Tri-Nation Series which was Bangladesh's first ever multi-team ODI tournament final win.  
                 </p>
             </div>
@@ -30,7 +28,7 @@
     <div>
       <div class="card w-60 bg-base-100 shadow-xl">
         <figure class="px-15 pt-10">
-          <img src="img/Anamul Haque.jpg" alt="Shoes" class="rounded-xl" />
+          <img src="img/Anamul Haque.jpg" alt="Shoes" class="rounded-full" />
         </figure>
         <div class="card-body items-center text-center">
           <h2 class="card-title">Anamul Haque</h2>
@@ -43,7 +41,7 @@
     <div>
       <div class="card w-60  bg-base-100 shadow-xl">
         <figure class="px-15 pt-10">
-          <img src="img/Mosaddek-Hossain.jpg" alt="Shoes" class="rounded-xl" />
+          <img src="img/Mosaddek-Hossain.jpg" alt="Shoes" class=" rounded-full" />
         </figure>
         <div class="card-body items-center text-center">
           <h2 class="card-title">Mosaddek </h2>
@@ -56,7 +54,7 @@
     <div>
       <div class="card w-60  bg-black-100 shadow-xl">
         <figure class="px-5   pt-10">
-          <img  src="img/Taskin Ahmed.jpg " alt="Shoes" class="  rounded-xl " />
+          <img  src="img/Taskin Ahmed.jpg " alt="Shoes" class="   rounded-full " />
         </figure>
         <div class="card-body items-center text-center">
           <h2 class="card-title">Taskin </h2>
@@ -83,7 +81,7 @@
     <div>
       <div class="card w-60  bg-black-100 shadow-xl">
         <figure class="px-15 w-60 pt-10">
-          <img src="img/mustafizur-rahman.jpg" alt="Shoes" class="rounded-xl" />
+          <img src="img/mustafizur-rahman.jpg" alt="Shoes" class=" rounded-full" />
         </figure>
         <div class="card-body items-center text-center">
           <h2 class="card-title">Mustafizur </h2>
@@ -97,7 +95,7 @@
       <div>
         <div class="card w-60  bg-black-100 shadow-xl">
           <figure class="px-15   pt-10">
-            <img src="img/Tamim-Iqbal.jpg" alt="Tailwind-CSS-Avatar-component" class="w-30  rounded-xl" />
+            <img src="img/Tamim-Iqbal.jpg" alt="Tailwind-CSS-Avatar-component" class="w-30 rounded-full" />
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title">Tamim </h2>
@@ -111,7 +109,7 @@
     <div>
       <div class="card w-60  bg-black-100 shadow-xl">
         <figure class="px-15 pt-10">
-          <img src="img/soumya-sarkar.jpg" alt="Shoes" class="rounded-xl" />
+          <img src="img/soumya-sarkar.jpg" alt="Shoes" class="w-64 rounded-full" />
         </figure>
         <div class="card-body items-center text-center">
           <h2 class="card-title">soumya-sarkar </h2>
@@ -121,26 +119,65 @@
         </div>
       </div>
     </div>
-    <div>
-<h1 class="text-3xl font-semibold">
-  Budget
-</h1>
-per player: <input class=" mt-5 mb-5" id="per-player-cost" type="text" name=""  value="10000"><br>
-<button id="calculation-btn"   class="btn btn-primary px-20 " >calculation</button> <br>
+      <div>
+                <h1 class="text-3xl font-semibold">
+                  Budget
+                </h1>
+                    per player: <input class=" mt-5 mb-5" id="per-player-cost" type="text" name=""  value="10000"><br>
+                <button id="calculation-btn"   class="btn btn-primary px-20 " >calculation</button> <br>
 
- Player Expenses: <input type="text" class=" mt-5 mb-5" name="" id="player-expenses"> <br>
+                Player Expenses: <input type="text" class=" mt-5 mb-5" name="" id="player-expenses"> <br>
 
- Manager: <input type="text" class=" mt-5 mb-5" name="" id="Manager" value="20000"> <br>
+                Manager: <input type="text" class=" mt-5 mb-5" name="" id="Manager" value="20000"> <br>
 
- Coach: <input type="text" class=" mt-5 mb-5" name="" id="coach" value="40000"> <br>
+              Coach: <input type="text" class=" mt-5 mb-5" name="" id="coach" value="40000"> <br>
 
- <button id="calculate-total-btn"   class="btn btn-primary px-20 " >calculate Total</button> <br>
+                <button id="calculate-total-btn"   class="btn btn-primary px-20 " >calculate Total</button> <br>
 
-  Total: <input type="text" class=" mt-5 mb-5" name="" id="total-calculation" > <br>
- 
+                Total: <input type="text" class=" mt-5 mb-5" name="" id="total-calculation" > <br>
+            
 
 
-    </div>
+      </div>
+      <div>
+        <div class="card w-60  bg-black-100 shadow-xl">
+          <figure class="px-15 pt-10">
+            <img src="img/mashrafe-mortaza.jpg" alt="Shoes" class="w-60 rounded-full" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">mashrafe-mortaza </h2>
+            <div class="card-actions">
+              <button  class="btn btn-primary px-20 py-" onclick="player(this)">SELECT</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card w-60  bg-black-100 shadow-xl">
+          <figure class="px-15 pt-10">
+            <img src="img/sakib.jpg" alt="Shoes" class="w-44 rounded-full" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Sakib </h2>
+            <div class="card-actions">
+              <button  class="btn btn-primary px-20 py-" onclick="player(this)">SELECT</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card w-60  bg-black-100 shadow-xl">
+          <figure class="px-15 pt-10">
+            <img src="img/Mushfiqur Rahim.jpeg" alt="Shoes" class="w-32 rounded-full" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Mushfiqur</h2>
+            <div class="card-actions">
+              <button  class="btn btn-primary px-20 py-" onclick="player(this)">SELECT</button>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
 
   </section>
