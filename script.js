@@ -23,30 +23,34 @@ function displayPlayers(){
         }
         selectedPlayer.appendChild(tr);
     }
+    
 
 }
+
+
+
 function player(element){
     element.disabled = true;
     const playerName = element.parentNode.parentNode.children[0].innerText;
-  
-
-   const players = {
-    playerName:playerName,
-   }
-
-   
-   cart.push(players);
-   displayPlayers();
+    
+    
+    const players = {
+        playerName:playerName,
+    }
+    
+    
+    cart.push(players);
+    displayPlayers();
 }
+
 
 
 
 
 document.getElementById('calculation-btn').addEventListener('click',function(){
-    
-    const perPlayerValue = parseInt(document.getElementById('per-player-cost'));
-    const perPlayerCost = perPlayerValue.innerText;
- 
-    const totalCost = perPlayerCost * selectedPlayer;
-   
-})
+        const selectionPlayers =cart.length;
+        
+        const perPlayerValue = parseInt(document.getElementById('per-player-cost').value);
+        const totalCost = perPlayerValue * selectionPlayers ;
+      console.log(totalCost)
+    })
