@@ -51,6 +51,20 @@ document.getElementById('calculation-btn').addEventListener('click',function(){
         const selectionPlayers =cart.length;
         
         const perPlayerValue = parseInt(document.getElementById('per-player-cost').value);
-        const totalCost = perPlayerValue * selectionPlayers ;
-      console.log(totalCost)
+        const playerExpenses = perPlayerValue * selectionPlayers ;
+        document.getElementById('player-expenses').value=playerExpenses;
+
+    
+    document.getElementById('calculate-total-btn').addEventListener('click',function(){
+        const managerCost = parseInt(document.getElementById('Manager').value);
+        const coachCost = parseInt(document.getElementById('coach').value);
+        const totalCost = playerExpenses + managerCost + coachCost;
+
+     document.getElementById('total-calculation').value = totalCost;
+
     })
+
+    })
+   
+
+   
