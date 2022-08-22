@@ -17,26 +17,36 @@ function displayPlayers(){
         <td>${cart[i].playerName}</td>
         `
 
-        if(set===6){
-            break
+        if(set>5){
+
+            alert('Player Sit Not Enough')
         }
         selectedPlayer.appendChild(tr);
     }
 
 }
 function player(element){
+    element.disabled = true;
     const playerName = element.parentNode.parentNode.children[0].innerText;
   
 
    const players = {
     playerName:playerName,
    }
+
+   
    cart.push(players);
    displayPlayers();
 }
 
+
+
+
 document.getElementById('calculation-btn').addEventListener('click',function(){
     
-    const perPlayerCost = document.getElementById('per-player-cost');
-    const totalCost = perPlayerCost * set;
+    const perPlayerValue = parseInt(document.getElementById('per-player-cost'));
+    const perPlayerCost = perPlayerValue.innerText;
+ 
+    const totalCost = perPlayerCost * selectedPlayer;
+   
 })
