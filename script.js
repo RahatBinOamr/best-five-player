@@ -19,8 +19,9 @@ function displayPlayers(){
 
         if(set>5){
 
-            alert('Player Sit Not Enough')
+            alert("Player Sit Not Enough");
         }
+       
         selectedPlayer.appendChild(tr);
     }
     
